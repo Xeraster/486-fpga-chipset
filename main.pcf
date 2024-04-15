@@ -1,0 +1,115 @@
+#if comments aren't supported in pcf files im going to be pissed
+
+#cpu driven address pins
+set_io address[2] 73
+set_io address[3] 74
+set_io address[4] 75
+set_io address[5] 76
+set_io address[6] 78
+set_io address[7] 79
+set_io address[8] 80
+set_io address[9] 81
+set_io address[10] 82
+set_io address[11] 83
+set_io address[12] 84
+set_io address[13] 85
+set_io address[14] 87
+set_io address[15] 88
+set_io address[16] 90
+set_io address[17] 91
+set_io address[18] 95
+set_io address[19] 96
+set_io address[20] 97
+set_io address[21] 98
+set_io address[22] 99
+set_io address[23] 101
+set_io address[24] 102
+set_io address[25] 104
+set_io address[26] 105
+set_io address[27] 106
+set_io address[28] 107
+set_io address[29] 144
+set_io address[30] 143
+set_io address[31] 142
+
+#chipset generated address pins
+set_io A00 137
+set_io A01 138
+
+#z80 bus
+set_io WE 139
+set_io RD 141
+set_io MREQ 63
+set_io IOREQ 64
+
+#general control signals
+set_io TE0 119
+set_io TE1 121
+set_io TE2 122
+set_io TE3 124
+set_io BE0 115
+set_io BE1 116
+set_io BE2 117
+set_io BE3 118
+
+set_io ADS 114
+set_io MIO 113
+set_io DC 112
+set_io WR 110
+
+set_io z80bus_en 62
+set_io xbus_en 61
+set_io isabus_en 60
+set_io cfcard_en 56
+
+set_io CPU_CLK 94
+set_io IOR 25
+set_io IOW 26
+set_io SMEMR 28
+set_io SMEMW 29
+set_io MEMR 31
+set_io MEMW 32
+set_io BALE 33
+set_io INTA 34
+
+#timing related stuff
+set_io SLOT_RDY 125 #v9958 wait signal
+set_io RDY 23       #the regular RDY signal going to the cpu
+#set_io CPU_CLK 94
+
+#control the fpga's data bus
+set_io ts_ctrl 135
+
+#chip enable signals
+set_io rom_en 55
+set_io sram_en 7
+set_io lcd_en 4
+set_io PIT_en 48
+set_io rtc_en 47
+set_io PIC0_en 44
+set_io PIC1_en 45
+set_io hd0_WR 43
+set_io hd0_RD 42
+set_io kbd_en 41
+set_io cpld1_reg0_en 39
+set_io vgamap_en 38
+set_io cpld1_reg1_en 37
+
+#reset signal coming from lm809 to the fpga
+set_io FPGA_RESET 49
+
+#reset signal the fpga send out to the system after its finished getting its shit together
+set_io SYSTEM_RESET 93
+
+#interrupt_debug
+set_io interrupt_vector 120
+
+#fpga data bus
+set_io xd[0] 19
+set_io xd[1] 18
+set_io xd[2] 17
+set_io xd[3] 16
+set_io xd[4] 15
+set_io xd[5] 12
+set_io xd[6] 11
+set_io xd[7] 10
