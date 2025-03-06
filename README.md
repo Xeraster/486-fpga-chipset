@@ -1,3 +1,3 @@
-486 chipset. written in verilog for ice40 fpga. The system this is being used on contains bugs that defy all logic and reasoning, do not use. You have been warned.
+I'm fairly certain this is the latest iteration of this as seen in [this video](https://www.youtube.com/watch?v=9npggP93ksg).
 
-To compile, type in sh compile.sh. It's about a 3/5 level of difficulty to set all that stuff up. Not all distros can be configured to compile this up by simply copy-pasting install commands from google you have to put on your thinking cap for this one. You need all the complete yosys and icestorm stuff and not just some of it.
+There is special chipset-level handling for making the v9958 graphics card work. There curently is no wait state insertion for generic SLPC bus i/o cycles which I plan to change.

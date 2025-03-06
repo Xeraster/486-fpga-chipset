@@ -1,5 +1,3 @@
-#if comments aren't supported in pcf files im going to be pissed
-
 #cpu driven address pins
 set_io address[2] 73
 set_io address[3] 74

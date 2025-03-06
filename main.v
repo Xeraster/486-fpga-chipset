@@ -1,5 +1,7 @@
+/*i made this entire thing before I really understood what I was doing in verilog. It should not be referred to as an example of best practices.
+maybe I'll make it better, maybe I won't. I'm working on an ISA version of this chipset.
+*/
 `include "utils.v"
-`include "bram.v"
 
 //tested working 02/24/24
 /*module BE_to_A00A01 (b0, b1, b2, b3, a0, a1, ADS, CPU_CLK);
@@ -508,13 +510,6 @@ module top(
     end
 
     assign ts_ctrl = 1;     //keep this disabled
-
-    //doesn't work. Will probably never figure out why
-    //assign ts_ctrl = sram_active;   //use bram as system ram
-    //wire bramW, bramR;
-    //assign bramW = (~MEMW & ~sram_active);
-    //assign bramR = (~MEMR & ~sram_active);  //assuming active high
-    //implicit_bram fuckingRam(CPU_CLK, bramR, bramW, aa[8:0], aa[8:0], xd[7:0], xd[7:0]);
 
 
 
