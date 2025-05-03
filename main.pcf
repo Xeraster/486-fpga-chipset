@@ -37,8 +37,8 @@ set_io A01 138
 #z80 bus
 set_io WE 139
 set_io RD 141
-set_io MREQ 63
-set_io IOREQ 64
+set_io MREQ 8
+set_io IOREQ 9
 
 #general control signals
 set_io TE0 119
